@@ -1,0 +1,90 @@
+{
+  "name": "group-accessibility-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "root/server.js",
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.1"
+  },
+  "scripts": {
+    "start": "node root/server.js",
+    "start:dev": "env-cmd -f config/local/.env.development nodemon --watch database --watch root/server.js --watch routers/server --watch routers/firewall.js --watch routers/sockets.js root/server.js",
+    "dev": "webpack serve --config config/webpack/webpack.dev.js",
+    "build:dev": "webpack --config config/webpack/webpack.dev.js",
+    "build:prod": "webpack --config config/webpack/webpack.prod.js",
+    "build:prod:dev": "env-cmd -f config/local/.env.development webpack --config config/webpack/webpack.prod.js",
+    "heroku-postbuild": "npm run build:prod"
+  },
+  "author": {
+    "name": "Dhruv Prajapati",
+    "email": "prajapatidhruv266@gmail.com",
+    "url": "https://github.com/DGamer007"
+  },
+  "contributors": [
+    {
+      "name": "Dev Pandya"
+    },
+    {
+      "name": "Pruthvik Sheth",
+      "email": "pns00911@gmail.com",
+      "url": "https://github.com/pns00911"
+    },
+    {
+      "name": "Dhairya Patel",
+      "email": "pateldhairya283@gmail.com",
+      "url": "https://github.com/DhairyaPatel2210"
+    }
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.17.5",
+    "@babel/plugin-proposal-class-properties": "7.16.7",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-react": "7.16.7",
+    "babel-loader": "8.2.3",
+    "bcryptjs": "2.4.3",
+    "cookie": "0.4.2",
+    "core-js": "3.21.1",
+    "cors": "2.8.5",
+    "css-loader": "6.6.0",
+    "daisyui": "^2.51.6",
+    "express": "4.17.3",
+    "gsap": "3.9.1",
+    "history": "5.3.0",
+    "jsonwebtoken": "8.5.1",
+    "mini-css-extract-plugin": "2.5.3",
+    "moment": "2.29.1",
+    "mongodb": "4.4.0",
+    "mongoose": "6.2.3",
+    "node-sass": "7.0.1",
+    "postcss-loader": "^7.2.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.8.0",
+    "react-modal": "3.15.1",
+    "react-redux": "7.2.6",
+    "react-router-dom": "6.2.1",
+    "redux": "4.1.2",
+    "redux-thunk": "2.4.1",
+    "sass-loader": "12.6.0",
+    "socket.io": "4.4.1",
+    "socket.io-client": "4.4.1",
+    "style-loader": "^3.3.1",
+    "three": "0.137.5",
+    "uuid": "8.3.2",
+    "validator": "13.7.0",
+    "webpack": "5.69.1",
+    "webpack-cli": "4.9.2",
+    "webpack-merge": "5.8.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "dotenv-webpack": "7.1.0",
+    "env-cmd": "10.1.0",
+    "nodemon": "2.0.15",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.1",
+    "webpack-dev-server": "4.7.4"
+  }
+}

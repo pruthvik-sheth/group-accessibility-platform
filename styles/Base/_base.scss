@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway';
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $black-primary;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid $tint-color;
+    padding: 0.6em 1.5em;
+    border-radius: $rad-inputs;
+    outline: none;
+    // color: $white-primary;
+    color: $black-primary;
+    width: 100%;
+    margin-top: $m-size;
+}
+
+p {
+    font-size: $m-size;
+}
+
+.section-title {
+    font-size: $xl-size; // 4.8 rem = 48px coz html fontsize is 62.5%
+    font-weight: 800;
+    margin-bottom: $m-size;
+}
+
+.section-sub-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: $l-size;
+}
+
+.content {
+    line-height: 3.0rem;
+    font-size: $m-size;
+    font-weight: 200;
+}
+
+.boldy {
+    font-weight: 700;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1400px;
+    @include flexBoxify(column, center, center);
+}
+
+.button-general {
+    padding: $s-size $xl-size;
+    background-color: $tint-color;
+    border: none;
+    font-weight: 900;
+    font-size: $m-size;
+    color: $white-primary;
+    border-radius: $rad-button;
+    cursor: pointer;
+}
+
+.tintify {
+    color: $tint-color;
+}

@@ -1,0 +1,33 @@
+#header {
+    min-height: 100vh;
+    @include flexBoxify(column, center, center);
+    width: 85px;
+    background-color: $black-primary;
+    position: fixed;
+}
+
+
+.header_button {
+    border: none;
+    background-color: transparent;
+    padding: 10px 10px;
+    border-radius: $rad-button;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    color: $tint-color;
+    font-weight: 600;
+    @include flexBoxify(row, center, center);
+
+    img {
+        max-width: 24px;
+    }    
+
+    &:hover {
+        background-color: lighten($black-secondary, 10%);
+    }
+}
+
+
+.header_button + .header_button {
+    margin-top: $m-size;
+}

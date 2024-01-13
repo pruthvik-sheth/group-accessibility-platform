@@ -1,0 +1,47 @@
+#landing-info {
+    position: relative;
+    min-height: 100vh;
+    @include flexBoxify(row, center, flex-start);
+    position: relative;
+
+    .container {
+        @include flexBoxify(row, center, flex-start);
+    }
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: grab;
+}
+
+.landing__content {
+    z-index: 1;
+}
+
+
+#features {
+
+
+    .features_item {
+        width: 50%;
+        z-index: 1;
+    }
+
+    .features_image {
+        @include flexBoxify(row, center, center);
+    }
+
+    .features_item + .features_item {
+        margin-left: $xl-size;
+    }
+    .container {
+        @include flexBoxify(row, center, center);
+        padding: $xl-size 0;
+    }
+
+    img {
+        max-width: 60%;
+    }
+}

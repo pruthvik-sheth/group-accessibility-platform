@@ -1,0 +1,39 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    // background-color: $black-primary;
+}
+
+.nav-box {
+    width: 100%;
+    @include flexBoxify(row, center, space-between);
+    padding: 1rem 0;
+
+    button + button {
+        margin-left: $m-size;
+    }
+}
+
+.nav-variant {
+    padding: 0.6em 3em;
+    background: transparent;
+    border: none;
+    transition: 0.4s ease all;
+    font-size: $s-size;
+    &:hover{
+        background: $tint-color;
+    }
+}
+
+.logo {
+    font-size: $l-size;
+    font-weight: 800;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+

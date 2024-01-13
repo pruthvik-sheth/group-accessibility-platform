@@ -1,0 +1,30 @@
+// Base imports
+@import './Base/settings';
+@import './Base/mixins';
+@import './Base/base';
+
+//Component imports
+@import './Components/LoadingPage.scss';
+@import 'Components/Navbar/Navbar.scss';
+@import 'Components/Authentication/LandingPage.scss';
+@import 'Components/Authentication/LoginPage.scss';
+@import 'Components/Authentication/SignupPage.scss';
+@import 'Components/Group/CreateGroup.scss';
+@import 'Components/Group/GroupForm.scss';
+@import 'Components/Group/GroupListenItem.scss';
+@import 'Components/Group/GroupPage.scss';
+@import 'Components/Group/GroupProfile.scss';
+@import 'Components/Group/MemberListenItem.scss';
+@import 'Components/Home/Dashboard.scss';
+@import 'Components/Home/Header.scss';
+@import 'Components/Home/UserProfile.scss';
+@import 'Components/Home/VideoConf.scss';
+@import 'Components/Idea/AddIdea.scss';  
+@import 'Components/Idea/IdeaForm.scss';
+@import 'Components/Idea/IdeaListenItem.scss';
+@import 'Components/Idea/IdeaPage.scss';
+@import 'Components/User/UserPage.scss';
+@import 'Components/JoinGroup/Join.scss';
+
+
+

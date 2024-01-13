@@ -1,0 +1,78 @@
+#signup {
+    min-height: 100vh;
+    @include flexBoxify(column, center, center);
+
+    .container {
+        @include flexBoxify(row, center, space-between);
+    }
+}
+
+.signup_card {
+    position: relative;
+    @include flexBoxify(column, center, center);
+    background-color: $black-secondary;
+    width: 50%;
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+    padding-left: 6.4rem;
+    padding-right: 12.8rem;
+    border-radius: 3.2rem;
+    box-shadow: 0px 10px 50px hsl(220, 10%, 11%);
+
+    .section-sub-title {
+        align-self: flex-start;
+        font-weight: 800;
+    }
+}
+
+.signup_image {
+    width: 70%;
+    @include flexBoxify(row, center, center);
+    margin-left: $l-size;
+    img {
+        max-width: 60%;
+    }
+}
+
+
+
+
+
+.round-button {
+    position: absolute;
+    right: -80px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    color: $tint-color;
+    font-size: 1.92rem;
+    font-weight: 500;
+    border: 3px solid $tint-color;
+    background: $black-secondary;
+    transition: 0.4s ease all;
+    cursor: pointer;
+    z-index: 2;
+
+    &:hover {
+        background-color: $tint-color;
+        color: $black-primary;
+    }
+
+    h3 {
+        position: absolute;
+        transform: translate(36%, -50%);
+        text-transform: uppercase;
+    }
+}
+
+
+.null_1 {
+    position: absolute;
+    right: 0;
+    content: '';
+    height: 180px;
+    width: 90px;
+    background-color: $black-primary;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+}
