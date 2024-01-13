@@ -1,6 +1,6 @@
 # Group Accessibility Platform
 
-Group Accessibility Platform is a Web-Application (for now) which will allow users to form Groups and share Ideas among group Members. It is basically solving the problem of sharing and discussing Ideas with Group members or with anyone interested. Group Accessibility Platform is just not meant to be the Idea Sharing Platform but it has many other important and helpful features like... Chatting on Individual Idea, Video Meetings, Digital Whiteboard, A collaborative Text-Area which can help improve the Idea.
+Group Accessibility Platform is a web application designed for seamless idea sharing and collaboration within groups. Users can form groups, share ideas, and engage in discussions. Beyond basic idea sharing, the platform offers features such as individual idea chatting, video meetings, a digital whiteboard, and a collaborative text area, enhancing the overall collaborative experience.
 
 ### Developers Guide
 
